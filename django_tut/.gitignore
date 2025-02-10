@@ -1,0 +1,53 @@
+# Byte-compiled / compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+
+# Django secret files
+*.sqlite3
+db.sqlite3
+.env
+.env.*
+
+# Ignore migrations cache files (optional, but not actual migrations)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+
+# Logs and debug files
+*.log
+*.pot
+*.log.*
+logs/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Ignore media/uploads (if applicable)
+media/
+uploads/
+
+# Static files (Django can regenerate these)
+staticfiles/
+static/
+
+# Node.js dependencies (if using npm/yarn for frontend)
+node_modules/
+
+# Coverage and testing
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.nox/
+tox/
+
+# Docker-related files
+docker-compose.override.yml
