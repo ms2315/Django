@@ -10,7 +10,7 @@ class BaseModel(models.Model):
 # Create your models here.
 class MyUser(AbstractUser):
     username = models.CharField(max_length=30, unique=True)
-    password = models.CharField(max_length=50)
+    password = models.CharField(max_length=200)
     
     '''
     Here you assign custom user manager
