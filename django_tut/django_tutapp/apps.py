@@ -10,3 +10,4 @@ class DjangoTutappConfig(AppConfig):
         This ready() function s for importing signals
         """
         import django_tutapp.signals 
+        import django_tutapp.middlewares.logging
