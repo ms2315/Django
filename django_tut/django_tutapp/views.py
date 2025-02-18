@@ -31,9 +31,7 @@ class MyUserViewSet(viewsets.ModelViewSet):
             return Response({'error': 'Password and Re-Password are Not matched or length of password is too short'}, status=status.HTTP_400_BAD_REQUEST)
         
         user = User.objects.create_user(username=username, password=password, email=email)
-        return Response({'msg':'User created successfully', 'data':'{}.format(user)'}, status=status.HTTP_201_CREATED)
-        
-        
+        return Response({'msg':'User created successfully', 'data':'{}.format(user)'}, status=status.HTTP_201_CREATED)        
         
         
 class StudentViewSet(viewsets.ModelViewSet):
